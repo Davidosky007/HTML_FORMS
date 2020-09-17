@@ -113,9 +113,10 @@ section {
 
 /* Navigation Style */
 
+
 .nav_main {
   display: flex;
-  float: right;
+  justify-content: flex-end;
   margin-right: 30px;
   align-items: center;
 }
@@ -136,6 +137,7 @@ section {
   padding: 10px;
   align-items: center;
 }
+
 .nav__signButton button {
   padding: 10px;
   width: 100px;
@@ -156,6 +158,38 @@ section {
 }
 
 /* Header Style */
+
+.header_title {
+  align-items: center;
+  width: 10rem;
+
+
+}
+
+.main_haeder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo_section {
+  display: flex;
+  margin-bottom: -13px;
+
+}
+
+.logo_section img {
+  width: 1.5rem;
+  padding: 3px;
+}
+
+.logo_section a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 4px;
+  font-family: helvetica;
+}
 
 /* Main Form Section Style */
 
