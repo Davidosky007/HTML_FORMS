@@ -89,9 +89,11 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Mono", monospace;
-  background-color: ECEEF1;
+  font-family: Arial, Helvetica, sans-serif;
+  /* "Roboto", sans-serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  /* "Roboto Mono", monospace; */
+  background-color: #eceef1;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -108,3 +110,53 @@ nav,
 section {
   display: block;
 }
+
+/* Navigation Style */
+
+.nav_main {
+  display: flex;
+  float: right;
+  margin-right: 30px;
+  align-items: center;
+}
+
+.nav__forgotPass {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__forgotPass a {
+  margin-top: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav__signButton {
+  padding: 10px;
+  align-items: center;
+}
+.nav__signButton button {
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #0077c5;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  border: 1px solid #4c4c4c;
+}
+
+.nav__signButtonImg {
+  width: 14px;
+  height: 14px;
+  color: #ffffff;
+  background: none;
+  padding-right: 2px;
+}
+
+/* Header Style */
+
+/* Main Form Section Style */
+
+/* Footer Section Style */
