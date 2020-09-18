@@ -84,17 +84,16 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font: 100%;
   font: inherit;
   vertical-align: baseline;
   font-family: Arial, Helvetica, sans-serif;
-  /* "Roboto", sans-serif; */
   font-family: Arial, Helvetica, sans-serif;
-  /* "Roboto Mono", monospace; */
   background-color: #eceef1;
 }
 
 /* HTML5 display-role reset for older browsers */
+
 article,
 aside,
 details,
@@ -186,9 +185,5 @@ section {
   align-items: center;
   text-decoration: none;
   padding: 4px;
-  font-family: helvetica;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-/* Main Form Section Style */
-
-/* Footer Section Style */
