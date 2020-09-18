@@ -1,7 +1,5 @@
-/* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap");
-
 /* css reset */
+
 html,
 body,
 div,
@@ -111,8 +109,11 @@ section {
   display: block;
 }
 
-/* Navigation Style */
+/* Google Fonts */
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap");
+
+/* Navigation Style */
 
 .nav_main {
   display: flex;
@@ -144,7 +145,7 @@ section {
   cursor: pointer;
   background-color: #0077c5;
   border-radius: 4px;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   border: 1px solid #4c4c4c;
 }
@@ -152,7 +153,7 @@ section {
 .nav__signButtonImg {
   width: 14px;
   height: 14px;
-  color: #ffffff;
+  color: #fff;
   background: none;
   padding-right: 2px;
 }
@@ -162,8 +163,6 @@ section {
 .header_title {
   align-items: center;
   width: 10rem;
-
-
 }
 
 .main_haeder {
@@ -175,7 +174,6 @@ section {
 .logo_section {
   display: flex;
   margin-bottom: -13px;
-
 }
 
 .logo_section img {
