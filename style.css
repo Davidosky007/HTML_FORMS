@@ -193,6 +193,11 @@ body {
 
 /* Form Area */
 
+.main_sectionForm {
+  margin: 0 auto;
+  padding: 10px;
+}
+
 .main_section {
   display: flex;
   flex-direction: column;
@@ -201,7 +206,6 @@ body {
   width: 380px;
   background-color: #fff;
   border: 1px solid #c7c7c7;
-  padding: 10px;
 }
 
 .main__sectionTitle a {
@@ -215,4 +219,81 @@ h2 {
   padding: 10px;
   font-size: 26px;
   margin-left: 25px;
+}
+
+.email_f-1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0;
+  border: 0;
+  margin-left: 20px;
+}
+
+.label_email {
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  color: #404040;
+}
+
+.email-form {
+  width: 320px;
+  border-radius: 4px;
+  height: 20px;
+  padding-top: 10px;
+}
+
+.input_text {
+  font-size: 10px;
+  text-align: left;
+  font-weight: 100;
+}
+
+.email_f-2 {
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #0A79C8;
+  color: #fff;
+  width: 87%;
+  cursor: pointer;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 200;
+  margin-left: 18px;
+}
+
+.email_f-2 img {
+  padding-right: 5px;
+}
+
+.form_footer {
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 30px;
+  line-height: 1.5;
+}
+
+.form_footer a {
+  text-decoration: none;
+  color: #0077C5;
+}
+
+.lower_footer {
+  font-size: 10px;
+}
+
+.main_lower_footer {
+  background-color: #ECEEF1;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.main_lower_footer a {
+  text-decoration: none;
+  color: #0077C5;
 }
