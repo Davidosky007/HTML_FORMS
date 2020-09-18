@@ -150,6 +150,7 @@ body {
   color: #fff;
   font-size: 14px;
   border: 1px solid #4c4c4c;
+  outline: none;
 }
 
 .nav__signButtonImg {
@@ -219,6 +220,7 @@ h2 {
   padding: 10px;
   font-size: 26px;
   margin-left: 25px;
+  margin-top: 20px;
 }
 
 .email_f-1 {
@@ -241,12 +243,15 @@ h2 {
   border-radius: 4px;
   height: 20px;
   padding-top: 10px;
+  border: 1px solid #c1c5c8;
+  outline: none;
 }
 
 .input_text {
   font-size: 10px;
   text-align: left;
   font-weight: 100;
+  margin-top: 5px;
 }
 
 .email_f-2 {
@@ -261,6 +266,7 @@ h2 {
   font-size: 16px;
   font-weight: 200;
   margin-left: 18px;
+  border: none;
 }
 
 .email_f-2 img {
@@ -290,10 +296,34 @@ h2 {
   width: 100%;
   height: 50px;
   text-align: center;
-  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_lower_footer a {
   text-decoration: none;
   color: #0077c5;
+}
+
+/* Footer Section */
+
+.main_footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  line-height: 1.3rem;
+  margin: 0 auto;
+  padding: 15px;
+  color: #505050;
+}
+
+.final_footer-1 a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.final_footer-2 p {
+  text-align: center;
 }
