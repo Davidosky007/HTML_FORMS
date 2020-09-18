@@ -88,7 +88,7 @@ video {
   vertical-align: baseline;
   font-family: Arial, Helvetica, sans-serif;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #eceef1;
+  color: #4c4c4c;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -110,6 +110,10 @@ section {
 /* Google Fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap");
+
+body {
+  background-color: #eceef1;
+}
 
 /* Navigation Style */
 
@@ -185,4 +189,30 @@ section {
   text-decoration: none;
   padding: 4px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Form Area */
+
+.main_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 380px;
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+  padding: 10px;
+}
+
+.main__sectionTitle a {
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 130px;
+  color: #0077cf;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 26px;
+  margin-left: 25px;
 }
