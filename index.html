@@ -1,162 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="style.css" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-			integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-			crossorigin="anonymous"
-		/>
-	</head>
 
-	<body>
-		<!-- Navigation section -->
-		<nav class="nav_main">
-			<div class="nav__forgotPass">
-				<p>Already have an ituit account?</p>
-				<a href="#">I forgor my User Id or Password</a>
-			</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+</head>
 
-			<div class="nav__signButton">
-				<button>
-					<img
-						class="nav__signButtonImg"
-						src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg=="
-						alt=""
-					/>
-					Sign In
-				</button>
-			</div>
-		</nav>
-		<!-- Title Section -->
-		<header class="main_haeder">
-			<div class="header_title">
-				<a href="#">
-					<img src="./img/logo.svg" alt="svg-header" />
-				</a>
-			</div>
-			<!-- Logos section -->
-			<div class="logo_section">
-				<a href="#">
-					<img
-						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiMwMEE2QTQiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTAgMi43NzdjLS42NTguNjYtNS4xNzQgNS4zMDktNS4xNzQgOC45MyAwIDIuNTc4IDIuMDU1IDMuNDMyIDUuMTc0IDUuNTU0IDMuMTItMi4xMjIgNS4xNzQtMi45NzYgNS4xNzQtNS41NTQgMC0zLjYyMS00LjUxNS04LjI3LTUuMTc0LTguOTN6bTAgMTIuNzQ4bC0uNjA3LS4zOTdjLTIuMzItMS41MTEtMy4xMjMtMi4xMDEtMy4xMjMtMy40MjEgMC0yLjA0NCAyLjAyOC00Ljg4OCAzLjczLTYuODE2djEwLjYzNHoiLz48L2c+PC9zdmc+"
-						alt=""
-					/>
-					<p>mint</p>
-				</a>
-				<a href="#">
-					<img
-						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01OTguNSA5NzEuNSA1MCA1MCI+PGNpcmNsZSBjeD0iLTU3My41IiBjeT0iOTk2LjUiIHI9IjI1IiBmaWxsPSIjMmNhMDFjIi8+PHBhdGggZD0iTS01OTEuNSw5OTYuNWMwLDUuNCw0LjQsOS44LDkuOCw5LjhoMS40di0zLjZoLTEuNGMtMy40LDAtNi4yLTIuOC02LjItNi4yczIuOC02LjIsNi4yLTYuMmgzLjQgYzAsMCwwLDE4LjYsMCwxOC44YzAsMiwxLjYsMy42LDMuNiwzLjZ2LTI2LjJjMCwwLTMuOCwwLTcsMEMtNTg3LjMsOTg2LjctNTkxLjUsOTkxLjEtNTkxLjUsOTk2LjV6IE0tNTY1LjEsOTg2LjdoLTEuNHYzLjZoMS40IGMzLjQsMCw2LjIsMi44LDYuMiw2LjJzLTIuOCw2LjItNi4yLDYuMmgtMy40YzAsMCwwLTE4LjYsMC0xOC44YzAtMi0xLjYtMy42LTMuNi0zLjZ2MjYuMmMwLDAsMy44LDAsNywwYzUuNCwwLDkuOC00LjQsOS44LTkuOCBDLTU1NS41LDk5MS4xLTU1OS43LDk4Ni43LTU2NS4xLDk4Ni43eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
-						alt=""
-					/>
-					<p>quickbooks</p>
-				</a>
-				<a href="#">
-					<img
-						src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01OTguNSA5NzEuNSA1MCA1MCI+PGNpcmNsZSBjeD0iLTU3My41IiBjeT0iOTk2LjUiIHI9IjI1IiBmaWxsPSIjZDUyYjFlIi8+PHBhdGggZD0iTS01NzkuMSwxMDA1LjdjLTIuOC0yLTUuNi00LjItOC4yLTYuNmMtMSwyLjItMS44LDQuNC0yLjYsNi42YzQuMiwzLjYsOS44LDcuNiwxMy44LDEwIGM1LTEzLDEyLjgtMjEuNCwyMC40LTI3LjRjLTEtMi0yLjItMy44LTMuOC01LjRDLTU2Ny43LDk4OC45LTU3NC4zLDk5Ni43LTU3OS4xLDEwMDUuN3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
-						alt=""
-					/>
-					<p>turbotax</p>
-				</a>
-			</div>
-		</header>
+<body>
+	<!-- Navigation section -->
+	<nav class="nav_main">
+		<div class="nav__forgotPass">
+			<p>Already have an ituit account?</p>
+			<a href="#">I forgor my User Id or Password</a>
+		</div>
 
-		<!-- Main Section -->
-		<main class="main_section">
-			<div class="main__sectionTitle">
-				<h2>Create an intuit account</h2>
-				<p>One account for everything Intuit, including Mint.</p>
-				<a href="#">Learn more</a>
-			</div>
+		<div class="nav__signButton">
+			<button>
+				<img class="nav__signButtonImg"
+					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg=="
+					alt="" />
+				Sign In
+			</button>
+		</div>
+	</nav>
+	<!-- Title Section -->
+	<header class="main_haeder">
+		<div class="header_title">
+			<a href="#">
+				<img src="./img/logo.svg" alt="svg-header" />
+			</a>
+		</div>
+		<!-- Logos section -->
+		<div class="logo_section">
+			<a href="#">
+				<img
+					src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iMTAiIGZpbGw9IiMwMEE2QTQiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTAgMi43NzdjLS42NTguNjYtNS4xNzQgNS4zMDktNS4xNzQgOC45MyAwIDIuNTc4IDIuMDU1IDMuNDMyIDUuMTc0IDUuNTU0IDMuMTItMi4xMjIgNS4xNzQtMi45NzYgNS4xNzQtNS41NTQgMC0zLjYyMS00LjUxNS04LjI3LTUuMTc0LTguOTN6bTAgMTIuNzQ4bC0uNjA3LS4zOTdjLTIuMzItMS41MTEtMy4xMjMtMi4xMDEtMy4xMjMtMy40MjEgMC0yLjA0NCAyLjAyOC00Ljg4OCAzLjczLTYuODE2djEwLjYzNHoiLz48L2c+PC9zdmc+"
+					alt="" />
+				<p>mint</p>
+			</a>
+			<a href="#">
+				<img
+					src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01OTguNSA5NzEuNSA1MCA1MCI+PGNpcmNsZSBjeD0iLTU3My41IiBjeT0iOTk2LjUiIHI9IjI1IiBmaWxsPSIjMmNhMDFjIi8+PHBhdGggZD0iTS01OTEuNSw5OTYuNWMwLDUuNCw0LjQsOS44LDkuOCw5LjhoMS40di0zLjZoLTEuNGMtMy40LDAtNi4yLTIuOC02LjItNi4yczIuOC02LjIsNi4yLTYuMmgzLjQgYzAsMCwwLDE4LjYsMCwxOC44YzAsMiwxLjYsMy42LDMuNiwzLjZ2LTI2LjJjMCwwLTMuOCwwLTcsMEMtNTg3LjMsOTg2LjctNTkxLjUsOTkxLjEtNTkxLjUsOTk2LjV6IE0tNTY1LjEsOTg2LjdoLTEuNHYzLjZoMS40IGMzLjQsMCw2LjIsMi44LDYuMiw2LjJzLTIuOCw2LjItNi4yLDYuMmgtMy40YzAsMCwwLTE4LjYsMC0xOC44YzAtMi0xLjYtMy42LTMuNi0zLjZ2MjYuMmMwLDAsMy44LDAsNywwYzUuNCwwLDkuOC00LjQsOS44LTkuOCBDLTU1NS41LDk5MS4xLTU1OS43LDk4Ni43LTU2NS4xLDk4Ni43eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg=="
+					alt="" />
+				<p>quickbooks</p>
+			</a>
+			<a href="#">
+				<img
+					src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01OTguNSA5NzEuNSA1MCA1MCI+PGNpcmNsZSBjeD0iLTU3My41IiBjeT0iOTk2LjUiIHI9IjI1IiBmaWxsPSIjZDUyYjFlIi8+PHBhdGggZD0iTS01NzkuMSwxMDA1LjdjLTIuOC0yLTUuNi00LjItOC4yLTYuNmMtMSwyLjItMS44LDQuNC0yLjYsNi42YzQuMiwzLjYsOS44LDcuNiwxMy44LDEwIGM1LTEzLDEyLjgtMjEuNCwyMC40LTI3LjRjLTEtMi0yLjItMy44LTMuOC01LjRDLTU2Ny43LDk4OC45LTU3NC4zLDk5Ni43LTU3OS4xLDEwMDUuN3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4="
+					alt="" />
+				<p>turbotax</p>
+			</a>
+		</div>
+	</header>
 
-			<!-- Form Section -->
-			<div class="main__sectionForm">
-				<form action="" class="main_form">
-					<fieldset class="email_f-1">
-						<label for="Email" class="label_email"> Email Address</label>
-						<div class="input__email">
-							<input type="email" name="email" class="email-form" />
-						</div>
-					</fieldset>
-					<fieldset class="email_f-1">
-						<label for="phone number" class="label_email"
-							>Phone(recomended)</label
-						>
-						<div class="input_phone">
-							<input type="tel" name="tel" class="email-form" required />
-							<p class="input_text">
-								Standard call, messaging or data rates may apply.
-							</p>
-						</div>
-					</fieldset>
-					<fieldset class="email_f-1">
-						<label for="password" class="label_email">Password</label>
-						<div class="input_password">
-							<input
-								type="password"
-								name="password"
-								class="email-form"
-								required
-							/>
-						</div>
-					</fieldset>
+	<!-- Main Section -->
+	<main class="main_section">
+		<div class="main__sectionTitle">
+			<h2>Create an intuit account</h2>
+			<p>One account for everything Intuit, including Mint.</p>
+			<a href="#">Learn more</a>
+		</div>
 
-					<fieldset>
-						<button class="email_f-2">
-							<img
-								class="nav__signButtonImg"
-								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg=="
-								alt="lock_btn"
-							/>Create Account
-						</button>
-					</fieldset>
+		<!-- Form Section -->
+		<div class="main__sectionForm">
+			<form action="" class="main_form">
+				<fieldset class="email_f-1">
+					<label for="Email" class="label_email"> Email Address</label>
+					<div class="input__email">
+						<input type="email" name="email" class="email-form" />
+					</div>
+				</fieldset>
+				<fieldset class="email_f-1">
+					<label for="phone number" class="label_email">Phone(recomended)</label>
+					<div class="input_phone">
+						<input type="tel" name="tel" class="email-form" required />
+						<p class="input_text">
+							Standard call, messaging or data rates may apply.
+						</p>
+					</div>
+				</fieldset>
+				<fieldset class="email_f-1">
+					<label for="password" class="label_email">Password</label>
+					<div class="input_password">
+						<input type="password" name="password" class="email-form" required />
+					</div>
+				</fieldset>
 
-					<!-- Form Footer Section -->
-					<fieldset>
-						<div class="form_footer">
-							<p>
-								By clicking Create account, you agree to our <br />
-								<a href="#">Terms</a> and have read and acknowledge our
-								<a href="#"
-									>Privacy <br />
-									Statement</a
-								>.
-							</p>
-						</div>
-					</fieldset>
+				<fieldset>
+					<button class="email_f-2">
+						<img class="nav__signButtonImg"
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg=="
+							alt="lock_btn" />Create Account
+					</button>
+				</fieldset>
 
-					<!-- Lower Form Footer -->
-				</form>
-				<section class="main_lower_footer">
-					<span class="lower_footer">
-						Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a>
-					</span>
-					<span class="lower_footer"> and <a href="#">Terms of Use.</a> </span>
-				</section>
-			</div>
+				<!-- Form Footer Section -->
+				<fieldset>
+					<div class="form_footer">
+						<p>
+							By clicking Create account, you agree to our <br />
+							<a href="#">Terms</a> and have read and acknowledge our
+							<a href="#">Privacy <br />
+								Statement</a>.
+						</p>
+					</div>
+				</fieldset>
 
-			<div class="main__sectionFooter"></div>
-		</main>
+				<!-- Lower Form Footer -->
+			</form>
+			<section class="main_lower_footer">
+				<span class="lower_footer">
+					Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a>
+				</span>
+				<span class="lower_footer"> and <a href="#">Terms of Use.</a> </span>
+			</section>
+		</div>
 
-		<!-- Footer Section -->
-		<footer class="main_footer">
-			<div class="final_footer-1">
-				<a href="#">Legal</a>
-				<a href="#">Privacy</a>
-				<a href="#">Security</a>
-			</div>
-			<div class="final_footer-2">
-				<p>
-					&#169; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
-					TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
-					Terms and conditions, features, support, pricing, and service options
-					subject to change without notice.
-				</p>
-			</div>
-		</footer>
-	</body>
+		<div class="main__sectionFooter"></div>
+	</main>
+
+	<!-- Footer Section -->
+	<footer class="main_footer">
+		<div class="final_footer-1">
+			<a href="#">Legal</a>
+			<a href="#">Privacy</a>
+			<a href="#">Security</a>
+		</div>
+		<div class="final_footer-2">
+			<p>
+				&#169; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
+				TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+				Terms and conditions, features, support, pricing, and service options
+				subject to change without notice.
+			</p>
+		</div>
+	</footer>
+</body>
+
 </html>
