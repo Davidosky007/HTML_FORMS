@@ -7,9 +7,12 @@ Simple HTML Form Using HTML & CSS
 - HTML
 - CSS
 
+ <img src="./img/screencapture-davidosky007-github-io-HTML-FORMS-2020-09-21-08_37_40.jpg" width="800" height="500">
+
+
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://davidosky007.github.io/HTML_FORMS/)
 
 ## Getting Started
 
@@ -25,8 +28,8 @@ To get local copy up and running just clone the Repository.
 
 :bust_in_silhouette: **Author2**
 
-- GitHub: [David Bassey](https://github.com/davidosky007)
-- Twitter: [David Bassey](https://twitter.com/Davidosky2)
+- GitHub: [@davidosky007](https://github.com/davidosky007)
+- Twitter: [@davidosky2](https://twitter.com/Davidosky2)
 - LinkedIn: [David Bassey](https://www.linkedin.com/in/david-bassey-2b9671199/)
 
 ## :handshake: Contributing
