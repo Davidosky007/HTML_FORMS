@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="nav__signButton">
-			<button>
+			<button type="button">
 				<img class="nav__signButtonImg"
 					src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg=="
 					alt="" />
@@ -67,17 +67,18 @@
 
 		<!-- Form Section -->
 		<div class="main__sectionForm">
-			<form action="" class="main_form">
+			<form action="#" class="main_form">
 				<fieldset class="email_f-1">
-					<label for="Email" class="label_email"> Email Address</label>
+					<label for="Email_Address" class="label_email">
+						Email Address</label>
 					<div class="input__email">
-						<input type="email" name="email" class="email-form" />
+						<input id="Email_Address" type="email" name="email" class="email-form" />
 					</div>
 				</fieldset>
 				<fieldset class="email_f-1">
-					<label for="phone number" class="label_email">Phone(recomended)</label>
+					<label for="Phone(recomended)" class="label_email">Phone(recomended)</label>
 					<div class="input_phone">
-						<input type="tel" name="tel" class="email-form" required />
+						<input id="Phone(recomended)" type="tel" name="tel" class="email-form" required />
 						<p class="input_text">
 							Standard call, messaging or data rates may apply.
 						</p>
@@ -86,12 +87,12 @@
 				<fieldset class="email_f-1">
 					<label for="password" class="label_email">Password</label>
 					<div class="input_password">
-						<input type="password" name="password" class="email-form" required />
+						<input id="password" type="password" name="password" class="email-form" required />
 					</div>
 				</fieldset>
 
 				<fieldset>
-					<button class="email_f-2">
+					<button type="button" class="email_f-2">
 						<img class="nav__signButtonImg"
 							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAwCAMAAAClrpMkAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAC6UExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////3HoUvYAAAA9dFJOUwCrcV0ZYP6AMaL2lhCgWMgEKPEtUX9BqCfRDVU2y9X5OsDkAQbuFePEJC7TD7Q4E4QHfDD6DLJCell9Q8cCdpKaAAABLUlEQVQ4y92V13KDMBBFsWmxKe69995Lqv7/t3KFNQnIwsvkyZP7hI6ORmIXDZr2t1x85/p1dfzLQ2vnZNktWWcXr7Um7DeTVpyWtlg4VlqtmcHkRl8aS30TLDFVWokfrbsVo22XH7Kk8AaYmLs/Q3eO8eBeqwLPpiEwnYFU77wUaDlCyiApWcsXGVuNImi0YqyYl7w+FtsSs8H6EnsHe5XYJ5gv1xisILECmFzrCpghMQOsojiLyrP/nXfYZ5AGb2YmGt7yBn/YH+DpjI4udqRiP5HXy3m5Hu116mD1DuUN10FR10PCM8OX/oG3EN6C8JrCaxJeW3htwvOE5xGedXsR0yLrXAOrJekbWKL+jrVxIu/N/Xjm7y/OOybwjvBOZ1I7n4Jr/0LFSP4f/QY7TeMSyZCaMgAAAABJRU5ErkJggg=="
 							alt="lock_btn" />Create Account
@@ -113,9 +114,9 @@
 				<!-- Lower Form Footer -->
 			</form>
 			<section class="main_lower_footer">
-				<span class="lower_footer">
+				<h3 class="lower_footer">
 					Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a>
-				</span>
+				</h3>
 				<span class="lower_footer"> and <a href="#">Terms of Use.</a> </span>
 			</section>
 		</div>
@@ -134,6 +135,7 @@
 			<p>
 				&#169; 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
 				TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+				<br />
 				Terms and conditions, features, support, pricing, and service options
 				subject to change without notice.
 			</p>
