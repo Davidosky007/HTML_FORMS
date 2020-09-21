@@ -1,0 +1,19 @@
+{
+  "name": "html_forms",
+  "version": "1.0.0",
+  "description": "Simple HTML Form Using HTML & CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidosky007/HTML_FORMS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidosky007/HTML_FORMS/issues"
+  },
+  "homepage": "https://github.com/Davidosky007/HTML_FORMS#readme"
+}
